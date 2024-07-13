@@ -1,0 +1,609 @@
+(node:25598) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25598) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at Server.listen (node:net:2044:7)
+    at Function.listen (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/app.js:28:5)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1925:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v20.15.0
+(node:1754) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1754) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server started on port 3000
+Connection to database failed: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+(node:1394) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1394) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server started on port 3000
+Connection to database failed: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+Operation `users.findOne()` buffering timed out after 10000ms
+Server started on port 3000
+Connection to database failed: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/mnt/c/Users/ssher/Downloads/Pet Projects/AlgoCrack/algocrack/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+Operation `users.findOne()` buffering timed out after 10000ms
+Operation `users.findOne()` buffering timed out after 10000ms
+
+> algocrack@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 1351ms (525 modules)
+ GET / 200 in 1810ms
+ ✓ Compiled in 387ms (254 modules)
+ ✓ Compiled /_not-found in 566ms (514 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/5c5536d90747ccaf.webpack.hot-update.json 404 in 527ms
+ GET / 200 in 60ms
+ GET /_next/static/css/app/layout.css?v=1720768224453 404 in 115ms
+ GET /_next/static/chunks/main-app.js?v=1720768224453 404 in 132ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 130ms
+ GET /_next/static/chunks/app/page.js 404 in 145ms
+ ✓ Compiled /favicon.ico in 233ms (302 modules)
+ GET /favicon.ico 200 in 331ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2000ms (767 modules)
+ GET / 404 in 2130ms
+ GET /favicon.ico 404 in 20ms
+ GET / 404 in 20ms
+ GET / 404 in 15ms
+ GET / 404 in 19ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 19ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 20ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 16ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 13ms
+ GET / 404 in 12ms
+ GET / 404 in 12ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 8ms
+ GET / 404 in 20ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 14ms
+ GET / 404 in 10ms
+ GET / 404 in 15ms
+ GET / 404 in 12ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 21ms
+ GET / 404 in 23ms
+ GET / 404 in 9ms
+ GET / 404 in 16ms
+ GET / 404 in 14ms
+ GET / 404 in 16ms
+ GET / 404 in 17ms
+ GET / 404 in 21ms
+ GET / 404 in 26ms
+ GET / 404 in 14ms
+ GET / 404 in 8ms
+ GET / 404 in 19ms
+ GET / 404 in 17ms
+ GET / 404 in 13ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 14ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 10ms
+ GET / 404 in 12ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 36ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 13ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 8ms
+ GET / 404 in 11ms
+ GET / 404 in 27ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 9ms
+ GET / 404 in 13ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 14ms
+ GET / 404 in 12ms
+ GET / 404 in 10ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 7ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 8ms
+ GET / 404 in 11ms
+ GET / 404 in 13ms
+ GET / 404 in 23ms
+ GET / 404 in 17ms
+ GET / 404 in 9ms
+ GET / 404 in 13ms
+ GET / 404 in 15ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 20ms
+ GET / 404 in 11ms
+ GET / 404 in 18ms
+ GET / 404 in 9ms
+ GET / 404 in 17ms
+ GET / 404 in 8ms
+ GET / 404 in 17ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 13ms
+ GET / 404 in 12ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 7ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 20ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 13ms
+ GET / 404 in 11ms
+ GET / 404 in 17ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 7ms
+ GET / 404 in 8ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 8ms
+ GET / 404 in 7ms
+ GET / 404 in 12ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ GET / 404 in 10ms
+ GET / 404 in 8ms
+ GET / 404 in 9ms
+ GET / 404 in 10ms
+ ✓ Compiled in 614ms (751 modules)
+ GET / 200 in 778ms
+ GET / 200 in 36ms
+ ✓ Compiled in 234ms (751 modules)
+ ✓ Compiled in 221ms (751 modules)
+ ✓ Compiled in 245ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Unexpected token `numeric literal (1, 1)`. Expected ... , *,  (, [, :, , ?, = or an identifier
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:15:1]
+ [2m15[0m | 
+ [2m16[0m | const connections = [
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from 1:}
+    : [31;1m           ^[0m
+ [2m19[0m | ]
+ [2m20[0m | 
+ [2m21[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expected ',', got ':'
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:15:1]
+ [2m15[0m | 
+ [2m16[0m | const connections = [
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from: 1:}
+    : [31;1m             ^[0m
+ [2m19[0m | ]
+ [2m20[0m | 
+ [2m21[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 224ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:15:1]
+ [2m15[0m | 
+ [2m16[0m | const connections = [
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from: 1, to: }
+    : [31;1m                   ^[0m
+ [2m19[0m | ]
+ [2m20[0m | 
+ [2m21[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 191ms (751 modules)
+ ✓ Compiled in 198ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:16:1]
+ [2m16[0m | const connections = [
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from: 1, to: 3 },
+ [2m19[0m |     { from: }
+    : [31;1m            ^[0m
+ [2m20[0m | ]
+ [2m21[0m | 
+ [2m22[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 244ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:16:1]
+ [2m16[0m | const connections = [
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from: 1, to: 3 },
+ [2m19[0m |     { from: 2, to:  }
+    : [31;1m                    ^[0m
+ [2m20[0m | ]
+ [2m21[0m | 
+ [2m22[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 180ms (751 modules)
+ ✓ Compiled in 267ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:17:1]
+ [2m17[0m |     { from: 1, to: 2 },
+ [2m18[0m |     { from: 1, to: 3 },
+ [2m19[0m |     { from: 2, to: 4 },
+ [2m20[0m |     { from: 2, to: }
+    : [31;1m                   ^[0m
+ [2m21[0m | ]
+ [2m22[0m | 
+ [2m23[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 283ms (748 modules)
+ ✓ Compiled in 239ms (748 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:18:1]
+ [2m18[0m |     { from: 1, to: 3 },
+ [2m19[0m |     { from: 2, to: 4 },
+ [2m20[0m |     { from: 2, to: 5 },
+ [2m21[0m |     { from:}
+    : [31;1m           ^[0m
+ [2m22[0m | ]
+ [2m23[0m | 
+ [2m24[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 220ms (748 modules)
+ ✓ Compiled in 160ms (748 modules)
+ ✓ Compiled in 156ms (748 modules)
+ ✓ Compiled in 316ms (748 modules)
+ ✓ Compiled in 150ms (748 modules)
+ ✓ Compiled in 138ms (748 modules)
+ ✓ Compiled in 223ms (748 modules)
+ ✓ Compiled in 160ms (748 modules)
+ ✓ Compiled in 224ms (748 modules)
+ ✓ Compiled in 186ms (748 modules)
+ ✓ Compiled in 189ms (748 modules)
+ ✓ Compiled in 214ms (748 modules)
+ ✓ Compiled in 160ms (748 modules)
+ ✓ Compiled in 199ms (748 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Unexpected token `numeric literal (7, 7)`. Expected ... , *,  (, [, :, , ?, = or an identifier
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:21:1]
+ [2m21[0m |     { from: 3, to: 6 },
+ [2m22[0m |     { from: 5, to: 7 },
+ [2m23[0m |     { from: 6, to: 7 },
+ [2m24[0m |     { from 7,}
+    : [31;1m           ^[0m
+ [2m25[0m | ]
+ [2m26[0m | 
+ [2m27[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 188ms (748 modules)
+ ✓ Compiled in 292ms (748 modules)
+ ✓ Compiled in 266ms (748 modules)
+ ✓ Compiled in 251ms (748 modules)
+ ✓ Compiled in 148ms (748 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:22:1]
+ [2m22[0m |     { from: 5, to: 7 },
+ [2m23[0m |     { from: 6, to: 7 },
+ [2m24[0m |     { from: 7, to: 8 },
+ [2m25[0m |     { from: }
+    : [31;1m            ^[0m
+ [2m26[0m | ]
+ [2m27[0m | 
+ [2m28[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 182ms (748 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:23:1]
+ [2m23[0m |     { from: 6, to: 7 },
+ [2m24[0m |     { from: 7, to: 8 },
+ [2m25[0m |     { from: 7, to: 9 },
+ [2m26[0m |     { from: }
+    : [31;1m            ^[0m
+ [2m27[0m | ]
+ [2m28[0m | 
+ [2m29[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:23:1]
+ [2m23[0m |     { from: 6, to: 7 },
+ [2m24[0m |     { from: 7, to: 8 },
+ [2m25[0m |     { from: 7, to: 9 },
+ [2m26[0m |     { from: 7, to: }
+    : [31;1m                   ^[0m
+ [2m27[0m | ]
+ [2m28[0m | 
+ [2m29[0m | const Roadmap = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 224ms (748 modules)
+ ✓ Compiled in 222ms (748 modules)
+ ✓ Compiled in 143ms (748 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 607ms (737 modules)
+ GET / 404 in 984ms
+ GET /_next/static/css/app/layout.css?v=1720768797971 404 in 42ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 63ms
+ GET /_next/static/chunks/main-app.js?v=1720768797971 404 in 61ms
+ ✓ Compiled in 456ms (751 modules)
+ ✓ Compiled in 474ms (751 modules)
+ ✓ Compiled in 237ms (751 modules)
+ ✓ Compiled in 384ms (751 modules)
+ ✓ Compiled in 289ms (751 modules)
+ ✓ Compiled in 295ms (751 modules)
+ ✓ Compiled in 305ms (748 modules)
+ ✓ Compiled in 390ms (748 modules)
+ ✓ Compiled in 221ms (748 modules)
+ ✓ Compiled /_not-found in 200ms (737 modules)
+ GET / 404 in 351ms
+ GET /_next/static/css/app/layout.css?v=1720768931622 404 in 49ms
+ GET /_next/static/chunks/main-app.js?v=1720768931622 404 in 71ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 91ms
+ ✓ Compiled in 420ms (751 modules)
+ ⨯ ./app/Roadmap.js
+Error: 
+  [31mx[0m Expected ',', got 'and'
+   ,-[[36;1;4m/home/sshermat/algocrack/app/Roadmap.js[0m:1:1]
+ [2m1[0m | import React from "react"
+ [2m2[0m | 
+ [2m3[0m | const steps = [
+ [2m4[0m |     { id: 1, title: Arrays and Hashing" },
+   : [31;1m                           ^^^[0m
+ [2m5[0m |     { id: 2, title: "Two Pointers" },
+ [2m6[0m |     { id: 3, title: "Stack" },
+ [2m7[0m |     { id: 4, title: "Sliding Window" },
+   `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/Roadmap.js
+./app/page.tsx
+ ✓ Compiled in 279ms (748 modules)
+ ✓ Compiled in 229ms (748 modules)
+ ✓ Compiled in 209ms (748 modules)
