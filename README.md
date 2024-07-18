@@ -35,7 +35,7 @@ AlgoCrack is a comprehensive roadmap and problem-solving platform for aspiring p
    ```bash
    npm start
 ## Project Structure
-   AlgoCrack/
+   ```bash AlgoCrack/
    │
    ├── README.md               # Project description and instructions
    ├── package.json            # Project metadata and dependencies
@@ -74,13 +74,11 @@ AlgoCrack is a comprehensive roadmap and problem-solving platform for aspiring p
    └── public/                 # Public assets
        └── images/             # Image files
            └── logo.png        # Project logo
-
+```
 ## Components
-   Modal.js: Component to display problems in a modal view.
-   ProblemPage.js: Component for displaying detailed problem descriptions and solutions.
-   Roadmap.js: Main component to visualize and navigate the roadmap of problem-solving stages.
-7. Data
-   Roadmap.js: Contains all problem data categorized by topics and difficulty levels.
+   1. Modal.js: Component to display problems in a modal view.
+   2. ProblemPage.js: Component for displaying detailed problem descriptions and solutions.
+   3. Roadmap.js: Main component to visualize and navigate the roadmap of problem-solving stages.
 ## Database Information
    Currently, this project does not utilize a database for persistent storage. Future plans include integrating a database to store user progress, problem solutions, and more.
 ## Contributing
